@@ -1,0 +1,8 @@
+#subpagehero {
+    height: 50vh;
+    width: 94vw;
+    background-color: #252734;
+    box-shadow: 2px 2px 2px white;
+    border: 2px solid white;
+    margin: 10% 0 0 5%;
+}

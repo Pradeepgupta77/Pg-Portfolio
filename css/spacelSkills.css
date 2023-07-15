@@ -1,0 +1,46 @@
+.Special-Skills {
+    flex-direction: row;
+    margin: 10% 0 0 5%;
+    gap: 5px;
+}
+
+/* Special Skills text section */
+.spacial-skills-sec1 {
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid wheat; */
+}
+
+.spacial-skills-sec1 h4 {
+    margin: 2.5rem 0;
+}
+
+.spacial-skills-sec1 .skill-btn {
+    margin: 8rem 0;
+}
+
+
+/* Special Skills bar section */
+.spacial-skills-sec2 {
+    height: 100%;
+    width: 50%;
+    border: 2px solid wheat;
+}
+
+@media screen and (max-width:900px) {
+    .spacial-skills-sec1 {
+        height: 40vh;
+        width: 90vw;
+        order: 1;
+        /* background: #481a1a; */
+    }
+
+    .spacial-skills-sec2 {
+        height: 49vh;
+        width: 90vw;
+    }
+
+    .spacial-skills-sec1 .skill-btn {
+        margin: 2rem 0;
+    }
+}

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+    background-color: #252734;
+}
+
+/* for page height and width  */
+#page {
+    height: 100vh;
+    width: 100vw;
+    background-color: #252734;
+    box-shadow: 2px 2px 2px white;
+}
+
+.page {
+    height: 90%;
+    width: 95%;
+
+}
+
+/* for utiliy class  */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* universial styling */
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 2.5rem;
+    color: #9f9e9e;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    h4 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+/* sosial link  */
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.social i {
+    font-size: 3.5rem;
+    height: 100%;
+    color: rgb(233, 233, 38);
+}
+
+.social i:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: yellow;
+}
+
+/* button */
+.btn-primery {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+    margin-left: 1rem;
+}
+
+.btn-primery a {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+
+.btn-primery::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn-primery:hover::before {
+    width: 9em;
+}
+
+@media screen and (max-widht:900px) {
+    .btn-primery:active::before {
+        width: 9em;
+    }
+}
