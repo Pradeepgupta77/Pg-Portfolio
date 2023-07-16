@@ -2,9 +2,9 @@
     height: 40vh;
     width: 100vw;
     background-color: #252734;
-    box-shadow: 2px 2px 2px white;
+    /* box-shadow: 2px 2px 2px white; */
     /* border: 2px solid white; */
-    margin: 10% 0 0 0;
+    margin: 5% 0 0 0;
 }
 
 .subpagehero {
@@ -17,11 +17,17 @@
 
 .subpagehero>div {
     height: 3.5rem;
-    width: 12.5rem;
+    width: 15rem;
     border: none;
     border-radius: 20px;
     background-color: #2A2C39;
     color: #dedddd;
     font-size: 1.2rem;
 
+}
+
+.subpagehero>div>a {
+    color: #9d9a9a;
+    font-size: 1.2rem;
+    margin-right: 5px;
 }

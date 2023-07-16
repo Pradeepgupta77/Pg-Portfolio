@@ -23,32 +23,35 @@
 
 <body>
     <main id="main">
+
         <!-- navbar -->
-        <div class="navbar">
+        <div class="navbar bg-dark ">
             <header class="header active">
-                <img class="logo" src="./img/logo.png" />
+                <img class="logo" href="./index.html" src="../../img/logo.png" />
                 <nav class="nav">
                     <ul class="nav_list">
                         <li><a class="nav_link" href="../../index.html">Home</a></li>
-                        <li class="dropdown"><a class="nav_link dropbtn" href="./service.html">Services</a>
+                        <li class="dropdown">
+                            <a class="nav_link dropbtn" href="../Service/service.html">Services</a>
                             <div class="dropdown-content">
-                                <a href="./service.html">Services</a>
-                                <a href="./Servicedetail.html">Services Details</a>
-                                <a href="./skills.html">Skills</a>
+                                <a href="../Service/service.html">Services</a>
+                                <a href="../serviceDetails/Servicedetail.html">Services Details</a>
+                                <a href="../Skills/skills.html">Skills</a>
                             </div>
                         </li>
-                        <li class="dropdown"><a class="nav_link dropbtn" href="#">Portfolio</a>
+                        <li class="dropdown"><a class="nav_link dropbtn"
+                                href="../portfolio/portfolio.html">Portfolio</a>
                             <div class="dropdown-content">
-                                <a href="#">React Js</a>
-                                <a href="#">Css</a>
-                                <a href="#">Animetion</a>
-                                <a href="#">JavaScript</a>
-                                <a href="#">WordPress</a>
+                                <a href="../portfolio/portfolio.html">React Js</a>
+                                <a href="../portfolio/portfolio.html">Web</a>
+                                <a href="../portfolio/portfolio.html">Animetion</a>
+                                <a href="../portfolio/portfolio.html">Game</a>
+                                <a href="../portfolio/portfolio.html">WordPress</a>
                             </div>
                         </li>
 
-                        <li><a class="nav_link" href="./about.html">About</a></li>
-                        <li><a class="nav_link" href="./contact.html">Contact</a></li>
+                        <li><a class="nav_link" href="../About/about.html">About</a></li>
+                        <li><a class="nav_link" href="../Contact/contact.html">Contact</a></li>
 
                     </ul>
                 </nav>
@@ -63,36 +66,60 @@
         <section id="subpagehero">
             <div class="subpagehero flex">
                 <h3>Services</h3>
-                <div class="flex">Service || Service List</div>
+                <div class="flex">
+                    <a href="../../index.html">Home </a>
+                    || Service List
+                </div>
             </div>
         </section>
 
         <!-- servises section  -->
         <section id="page">
             <div class="services page">
+                <h4>|| My Services</h4>
+                <h3>Service Provide By Me.</h3>
+
                 <!-- sider  -->
                 <div class="slider-card">
                     <div class="slider flex">
                         <div class="card skill-card1">
                             <div class="box">
-                                <span class="title">Front End web devloper</span>
-                                <ul>
-                                    <li>abc</li>
-                                </ul>
+                                <span class="title">Front End web devloper.</span>
+                                <div class="box-title-detail">
+                                    <ul>
+                                        <li><i class="ri-arrow-right-double-line"></i> React</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> Animetion</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> css</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> HTML</li>
+                                    </ul>
+                                </div>
 
                             </div>
                         </div>
                         <div class="card skill-card2">
                             <div class="box">
                                 <span class="title">UI/UX Designer</span>
-
+                                <div class="box-title-detail">
+                                    <ul>
+                                        <li><i class="ri-arrow-right-double-line"></i> Landing page</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> Icon Set</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> Motion Graphic</li>
+                                    </ul>
+                                </div>
 
                             </div>
                         </div>
                         <div class="card skill-card3">
                             <div class="box">
                                 <span class="title">WordPress devloper</span>
-
+                                <div class="box-title-detail">
+                                    <ul>
+                                        <li><i class="ri-arrow-right-double-line"></i> React</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> Animetion</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> css</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> HTML</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="card skill-card4">
@@ -102,32 +129,50 @@
 
                     </div>
                 </div>
-                <!-- slider button  -->
-                <div class="button-card flex">
-                    <button class="slider-btn skill-card1-btn"></button>
-                    <button class="slider-btn skill-card2-btn"></button>
-                    <button class="slider-btn skill-card3-btn"></button>
-                </div>
+
+
+            </div>
 
 
 
         </section>
 
         <!-- Contact section  -->
-        <section id="page">
-            nasdfjibasdfui
+        <section id="contact-me" class="bg-dark">
+            <div class="contact-me flex ">
+                <div class="contact-div">
+                    <h5>Contact Me</h5>
+                    <p>If you have any queries please feel free to contact me. You can contact me through the following
+                        form.
+
+                    </p>
+                    <p>Thank you</p>
+                    <div class="hero-btn">
+                        <button class="btn-primery">
+                            <a href="../Contact/contact.html">Contact Me </a>
+                            <i class="ri-telegram-line"></i>
+                        </button>
+                    </div>
+                </div>
         </section>
+
+        <!-- JavaScript -->
         <script src="../main.js"></script>
     </main>
+
     <!-- footer  -->
     <!-- css  -->
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../../utilityCSSFils/footer.css">
     <section id="Footer">
-        <div class="footer"></div>
+        <div class="footer ">
+            <div>©2023 Pradeep Kumar Gupta</div>
+            <div>
+                <a href="./pages/About/about.html">
+                    <img src="../../img/logo.png" alt="">
+                </a>
+            </div>
+        </div>
     </section>
-
-    <!-- JavaScript -->
-    <script src="../main.js"></script>
 </body>
 
 </html>

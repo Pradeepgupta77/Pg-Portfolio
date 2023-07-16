@@ -14,7 +14,7 @@ body {
 #main {
     position: relative;
     overflow: hidden;
-    background-color: #252734;
+    background-color: #2A2C39;
 
 }
 
@@ -31,7 +31,7 @@ body {
     height: 100vh;
     width: 100vw;
     /* background-color: #252734; */
-    box-shadow: 2px 2px 2px white;
+    /* box-shadow: 2px 2px 2px white; */
 }
 
 .page {
@@ -69,11 +69,11 @@ h3 {
 
 @media (max-width: 600px) {
     h4 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
@@ -136,7 +136,7 @@ h3 {
     width: 9em;
 }
 
-@media screen and (max-widht:900px) {
+@media screen and (max-width:900px) {
     .btn-primery:active::before {
         width: 9em;
     }

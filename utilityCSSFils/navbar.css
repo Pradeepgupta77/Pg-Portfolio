@@ -6,10 +6,11 @@ header {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
+    /* background: transparent;
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); */
     z-index: 9;
+    background-color: #252734;
 }
 
 header .logo {
@@ -140,10 +141,12 @@ header .logo {
 
     .nav {
         /* display: none; */
+        position: fixed;
         width: 50%;
         height: 100vh;
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
+        background-color: #252734;
+        /* backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px); */
         /* background: #aca2a2; */
         /* padding-top: 5rem; */
         position: absolute;
@@ -172,7 +175,10 @@ header .logo {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+
     }
+
+
 
     .active .mobile_icon_btn .mobile_nav_icon[name="close"] {
         display: block;
@@ -181,5 +187,6 @@ header .logo {
     .active .mobile_icon_btn .mobile_nav_icon[name="menu"] {
         display: none;
     }
+
 
 }

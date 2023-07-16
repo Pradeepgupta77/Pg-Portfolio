@@ -22,7 +22,7 @@
         <!-- navbar -->
         <div class="navbar bg-dark ">
             <header class="header active">
-                <img class="logo" src="./img/logo.png" />
+                <img class="logo" href="./index.html" src="./img/logo.png" />
                 <nav class="nav">
                     <ul class="nav_list">
                         <li><a class="nav_link" href="./index.html">Home</a></li>
@@ -34,13 +34,14 @@
                                 <a href="./pages/Skills/skills.html">Skills</a>
                             </div>
                         </li>
-                        <li class="dropdown"><a class="nav_link dropbtn" href="#">Portfolio</a>
+                        <li class="dropdown"><a class="nav_link dropbtn"
+                                href="./pages/portfolio/portfolio.html">Portfolio</a>
                             <div class="dropdown-content">
-                                <a href="#">React Js</a>
-                                <a href="#">Css</a>
-                                <a href="#">Animetion</a>
-                                <a href="#">JavaScript</a>
-                                <a href="#">WordPress</a>
+                                <a href="./pages/portfolio/portfolio.html">React Js</a>
+                                <a href="./pages/portfolio/portfolio.html">Web</a>
+                                <a href="./pages/portfolio/portfolio.html">Animetion</a>
+                                <a href="./pages/portfolio/portfolio.html">Game</a>
+                                <a href="./pages/portfolio/portfolio.html">WordPress</a>
                             </div>
                         </li>
 
@@ -57,7 +58,7 @@
         </div>
 
         <!-- hero section     -->
-        <section id="page">
+        <section id="page" class="bg-dark">
             <!-- page parent dev/hero page  -->
             <div class="hero page flex">
                 <!-- hero page text dev  -->
@@ -69,23 +70,23 @@
                         <li>Wordpress Devlpoer </li>
                     </ul>
                     <div class="social">
-                        <a href="#" target="_blank">
+                        <a href="https://www.linkedin.com/in/pg-pradeepgupta" target="_blank">
                             <i class="ri-linkedin-fill"></i>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://github.com/Pradeepgupta77" target="_blank">
                             <i class="ri-github-fill"></i>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://instagram.com/pg.pradeepgupta?igshid=ZDc4ODBmNjlmNQ==" target="_blank">
                             <i class="ri-instagram-line"></i>
                         </a>
                     </div>
                     <div class="hero-btn">
                         <button class="btn-primery">
-                            <a href="#">Contact Me </a>
+                            <a href="./pages/Contact/contact.html">Contact Me </a>
                             <i class="ri-telegram-line"></i>
                         </button>
                         <button class="btn-primery">
-                            <a href="#">Portfolio</a>
+                            <a href="./pages/portfolio/portfolio.html">Portfolio</a>
                             <i class="ri-arrow-right-up-line"></i>
                         </button>
                     </div>
@@ -113,23 +114,41 @@
                         <div class="card skill-card1">
                             <div class="box">
                                 <span class="title">Front End web devloper.</span>
-                                <ul>
-                                    <li>abc</li>
-                                </ul>
+                                <div class="box-title-detail">
+                                    <ul>
+                                        <li><i class="ri-arrow-right-double-line"></i> React</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> Animetion</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> css</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> HTML</li>
+                                    </ul>
+                                </div>
 
                             </div>
                         </div>
                         <div class="card skill-card2">
                             <div class="box">
                                 <span class="title">UI/UX Designer</span>
-
+                                <div class="box-title-detail">
+                                    <ul>
+                                        <li><i class="ri-arrow-right-double-line"></i> Landing page</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> Icon Set</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> Motion Graphic</li>
+                                    </ul>
+                                </div>
 
                             </div>
                         </div>
                         <div class="card skill-card3">
                             <div class="box">
                                 <span class="title">WordPress devloper</span>
-
+                                <div class="box-title-detail">
+                                    <ul>
+                                        <li><i class="ri-arrow-right-double-line"></i> React</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> Animetion</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> css</li>
+                                        <li><i class="ri-arrow-right-double-line"></i> HTML</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="card skill-card4">
@@ -139,12 +158,9 @@
 
                     </div>
                 </div>
-                <!-- slider button  -->
-                <div class="button-card flex">
-                    <button class="slider-btn skill-card1-btn"></button>
-                    <button class="slider-btn skill-card2-btn"></button>
-                    <button class="slider-btn skill-card3-btn"></button>
-                </div>
+
+
+            </div>
 
 
 
@@ -153,17 +169,17 @@
         <!-- Special Skills section  -->
         <!-- css  -->
         <link rel="stylesheet" href="./pages/Skills/Skills.css">
-        <section id="page">
+        <section id="page" class="bg-dark">
             <div class="Special-Skills page flex">
                 <div class="spacial-skills-sec1">
                     <h4>|| Special Skills</h4>
                     <h3>My Special Skill Field.</h3>
                     <div class="skill-btn">
                         <button class="btn-primery">
-                            <a href="#">Contact Me </a>
+                            <a href="./pages/Contact/contact.html">Contact Me </a>
                             <i class="ri-telegram-line"></i>
                         </button>
-                        <button class="btn-primery">
+                        <button class="btn-primery" onclick="downloadResume()">
                             <a href="#">Get Resume</a>
                             <i class="ri-download-2-line"></i>
                         </button>
@@ -171,6 +187,68 @@
                 </div>
 
                 <div class="spacial-skills-sec2">
+                    <!-- react -->
+                    <div class="skills-div">
+                        <div class="skill-name-div">
+                            <div class="skill-name">React</div>
+                            <div class="skill-per">50%</div>
+                        </div>
+                        <div class="progress-bar-div">
+                            <div class="progress-bar">
+                                <div class="react"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="skills-div">
+                        <div class="skill-name-div">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-per">50%</div>
+                        </div>
+                        <div class="progress-bar-div">
+                            <div class="progress-bar">
+                                <div class="JavaScript"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- css -->
+                    <div class="skills-div">
+                        <div class="skill-name-div">
+                            <div class="skill-name">css</div>
+                            <div class="skill-per">70%</div>
+                        </div>
+                        <div class="progress-bar-div">
+                            <div class="progress-bar">
+                                <div class="css"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HTML -->
+                    <div class="skills-div">
+                        <div class="skill-name-div">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-per">80%</div>
+                        </div>
+                        <div class="progress-bar-div">
+                            <div class="progress-bar">
+                                <div class="HTML"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WordPress -->
+                    <div class="skills-div">
+                        <div class="skill-name-div">
+                            <div class="skill-name">WordPress</div>
+                            <div class="skill-per">70%</div>
+                        </div>
+                        <div class="progress-bar-div">
+                            <div class="progress-bar">
+                                <div class="WordPress"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </div>
             </div>
@@ -179,52 +257,64 @@
         <!-- portfilio section  -->
         <!-- css  -->
         <link rel="stylesheet" href="./pages/portfolio/portfolio.css">
-        <section id="page" class="bg-ligh">
+        <section id="page">
             <div class="portfolio page">
                 <h4>|| Awesome Portfolio</h4>
                 <h3>My Complete Projects</h3>
 
                 <div class="project-btn">
                     <button class="btn-primery">
-                        <a href="#">React Js</a>
+                        <a href="./pages/portfolio/portfolio.html">React Js</a>
                         <i class="ri-reactjs-line"></i>
                     </button>
                     <button class="btn-primery">
-                        <a href="#">CSS</a>
+                        <a href="./pages/portfolio/portfolio.html">Web</a>
                         <i class="ri-css3-line"></i>
                     </button>
                     <button class="btn-primery">
-                        <a href="#">Animetion</a>
+                        <a href="./pages/portfolio/portfolio.html">Animetion</a>
                         <i class="ri-quill-pen-line"></i>
                     </button>
                     <button class="btn-primery">
-                        <a href="#">JavaScript</a>
-                        <i class="ri-javascript-line"></i>
+                        <a href="./pages/portfolio/portfolio.html">Game</a>
+                        <i class="ri-gamepad-line"></i>
                     </button>
                     <button class="btn-primery">
-                        <a href="#">WordPress</a>
+                        <a href="./pages/portfolio/portfolio.html">WordPress</a>
                         <i class="ri-wordpress-line"></i>
                     </button>
                 </div>
 
 
                 <div class="project flex">
-                    <div class="porject-card flex">
+                    <div class="porject-card  flex">
                         <div class="project1 ">
-                            <div></div>
-                            <p>Lorem ipsum dolor sit.</p>
+
+                            <div>
+                                <a href="">
+                                    <img src="./img/porjectIMG/playable piano.png" alt="">
+                                </a>
+                            </div>
+                            <a href="">
+                                <p>playable piano</p>
+                            </a>
+
                         </div>
                     </div>
-                    <div class="porject-card flex">
+                    <div class="porject-card dis flex">
                         <div class="project2 ">
                             <div>
-                                jnadjh
+                                <a href="">
+                                    <img src="./img/porjectIMG/playable piano.png" alt="">
+                                </a>
                             </div>
-                            <p>Lorem ipsum dolor sit.</p>
+                            <a href="">
+                                <p>Lorem ipsum dolor sit.</p>
+                            </a>
                         </div>
                     </div>
                     <button class="btn-primery" id="react-btn-seeall">
-                        <a href="#">See all</a>
+                        <a href="./pages/portfolio/portfolio.html">See all</a>
                     </button>
 
                 </div>
@@ -235,35 +325,45 @@
         <!-- About section  -->
         <!-- css  -->
         <link rel="stylesheet" href="./pages/About/about.css">
-        <section id="page">
-            <div class="about flex">
+        <section id="page" class="bg-dark">
+            <div class="about ">
                 <div class="about-sec1 flex">
                     <div class="my-pic flex bg-ligh">
                         <img src="./img/my-pic.jpeg" alt="">
                     </div>
-                    <div class="social">
-                        <a href="#" target="_blank">
+                    <div class="social about-social">
+                        <a href="https://www.linkedin.com/in/pg-pradeepgupta" target="_blank">
                             <i class="ri-linkedin-fill"></i>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://github.com/Pradeepgupta77" target="_blank">
                             <i class="ri-github-fill"></i>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://instagram.com/pg.pradeepgupta?igshid=ZDc4ODBmNjlmNQ==" target="_blank">
                             <i class="ri-instagram-line"></i>
                         </a>
                     </div>
 
                 </div>
-                <div class="about-sec2 flex">
+                <div class="about-sec2 ">
 
-                    <h4> ||About Me</h4>
+                    <h4><a href="./pages/About/about.html">||About Me</a></h4>
 
                     <div class="about-me ">
-                        <div>"</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia laudantium
-                            perspiciatis molestiae illum odit obcaecati reiciendis architecto quibusdam explicabo!
+
+
+                        <p>
+                            <span>"</span>Expert in web design: visually appealing, user-friendly websites. HTML, CSS,
+                            JavaScript.
+                            Clean, intuitive interfaces reflecting latest trends. Let's collaborate on your
+                            vision!<span>"</span>
+
                         </p>
+
+                        <button class="btn-primery abou-btn">
+                            <a href="./pages/About/about.html">More</a>
+                        </button>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -273,7 +373,7 @@
         <link rel="stylesheet" href="./pages/Contact/contact.css">
         <section id="contact-me">
             <div class="contact-me flex ">
-                <div class="contact-div flex">
+                <div class="contact-div">
                     <h5>Contact Me</h5>
                     <p>If you have any queries please feel free to contact me. You can contact me through the following
                         form.
@@ -291,6 +391,7 @@
 
         <script src="./main.js"></script>
     </main>
+
     <!-- footer  -->
     <!-- css  -->
     <link rel="stylesheet" href="./utilityCSSFils/footer.css">
@@ -298,7 +399,9 @@
         <div class="footer ">
             <div>©2023 Pradeep Kumar Gupta</div>
             <div>
-                <img src="./img/logo.png" alt="">
+                <a href="./pages/About/about.html">
+                    <img src="./img/logo.png" alt="">
+                </a>
             </div>
         </div>
     </section>
