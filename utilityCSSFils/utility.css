@@ -15,13 +15,22 @@ body {
     position: relative;
     overflow: hidden;
     background-color: #252734;
+
+}
+
+.bg-light {
+    background-color: #2A2C39;
+}
+
+.bg-dark {
+    background-color: #252734;
 }
 
 /* for page height and width  */
 #page {
     height: 100vh;
     width: 100vw;
-    background-color: #252734;
+    /* background-color: #252734; */
     box-shadow: 2px 2px 2px white;
 }
 

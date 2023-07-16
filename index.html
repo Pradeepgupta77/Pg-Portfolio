@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <!-- css -->
     <!-- navbar -->
-    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./utilityCSSFils/navbar.css">
     <!-- utility -->
-    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./utilityCSSFils/utility.css">
     <!-- home css -->
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./utilityCSSFils/home.css">
     <!-- icon CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -20,17 +20,18 @@
 <body>
     <main id="main">
         <!-- navbar -->
-        <div class="navbar">
+        <div class="navbar bg-dark ">
             <header class="header active">
                 <img class="logo" src="./img/logo.png" />
                 <nav class="nav">
                     <ul class="nav_list">
                         <li><a class="nav_link" href="./index.html">Home</a></li>
-                        <li class="dropdown"><a class="nav_link dropbtn" href="#">Services</a>
+                        <li class="dropdown"><a class="nav_link dropbtn"
+                                href="./pages/Service/service.html">Services</a>
                             <div class="dropdown-content">
-                                <a href="./html/service.html">Services</a>
-                                <a href="./html/Servicedetail.html">Services Details</a>
-                                <a href="./html/skills.html">Skills</a>
+                                <a href="./pages/Service/service.html">Services</a>
+                                <a href="./pages/serviceDetails/Servicedetail.html">Services Details</a>
+                                <a href="./pages/Skills/skills.html">Skills</a>
                             </div>
                         </li>
                         <li class="dropdown"><a class="nav_link dropbtn" href="#">Portfolio</a>
@@ -43,8 +44,8 @@
                             </div>
                         </li>
 
-                        <li><a class="nav_link" href="./html/about.html">About</a></li>
-                        <li><a class="nav_link" href="./html/contact.html">Contact</a></li>
+                        <li><a class="nav_link" href="./pages/About/about.html">About</a></li>
+                        <li><a class="nav_link" href="./pages/Contact/contact.html">Contact</a></li>
 
                     </ul>
                 </nav>
@@ -100,7 +101,7 @@
 
         <!-- servises section  -->
         <!-- css  -->
-        <link rel="stylesheet" href="./css/servises.css">
+        <link rel="stylesheet" href="./pages/Service/servises.css">
         <section id="page">
             <div class="services page">
                 <h4>|| My Services</h4>
@@ -151,7 +152,7 @@
 
         <!-- Special Skills section  -->
         <!-- css  -->
-        <link rel="stylesheet" href="./css/spacelSkills.css">
+        <link rel="stylesheet" href="./pages/Skills/Skills.css">
         <section id="page">
             <div class="Special-Skills page flex">
                 <div class="spacial-skills-sec1">
@@ -177,8 +178,8 @@
 
         <!-- portfilio section  -->
         <!-- css  -->
-        <link rel="stylesheet" href="./css/portfolio.css">
-        <section id="page">
+        <link rel="stylesheet" href="./pages/portfolio/portfolio.css">
+        <section id="page" class="bg-ligh">
             <div class="portfolio page">
                 <h4>|| Awesome Portfolio</h4>
                 <h3>My Complete Projects</h3>
@@ -224,7 +225,6 @@
                     </div>
                     <button class="btn-primery" id="react-btn-seeall">
                         <a href="#">See all</a>
-                        <i class="ri-reactjs-line"></i>
                     </button>
 
                 </div>
@@ -234,25 +234,73 @@
 
         <!-- About section  -->
         <!-- css  -->
-        <link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./pages/About/about.css">
         <section id="page">
-            nasdfjibasdfui
+            <div class="about flex">
+                <div class="about-sec1 flex">
+                    <div class="my-pic flex bg-ligh">
+                        <img src="./img/my-pic.jpeg" alt="">
+                    </div>
+                    <div class="social">
+                        <a href="#" target="_blank">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="about-sec2 flex">
+
+                    <h4> ||About Me</h4>
+
+                    <div class="about-me ">
+                        <div>"</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia laudantium
+                            perspiciatis molestiae illum odit obcaecati reiciendis architecto quibusdam explicabo!
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Contact section  -->
         <!-- css  -->
-        <link rel="stylesheet" href="./css/about.css">
-        <section id="page">
-            nasdfjibasdfui
+        <link rel="stylesheet" href="./pages/Contact/contact.css">
+        <section id="contact-me">
+            <div class="contact-me flex ">
+                <div class="contact-div flex">
+                    <h5>Contact Me</h5>
+                    <p>If you have any queries please feel free to contact me. You can contact me through the following
+                        form.
+
+                    </p>
+                    <p>Thank you</p>
+                    <div class="hero-btn">
+                        <button class="btn-primery">
+                            <a href="./pages/Contact/contact.html">Contact Me </a>
+                            <i class="ri-telegram-line"></i>
+                        </button>
+                    </div>
+                </div>
         </section>
 
         <script src="./main.js"></script>
     </main>
     <!-- footer  -->
     <!-- css  -->
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./utilityCSSFils/footer.css">
     <section id="Footer">
-        <div class="footer"></div>
+        <div class="footer ">
+            <div>©2023 Pradeep Kumar Gupta</div>
+            <div>
+                <img src="./img/logo.png" alt="">
+            </div>
+        </div>
     </section>
 </body>
 
