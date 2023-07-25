@@ -66,7 +66,7 @@
 
                     </div>
                     <p>Portfolio</p>
-                    <button class="goto-portfolio">
+                    <button id="goto-portfolio">
                         <i class="ri-logout-circle-r-line bordr goto"></i>
                     </button>
                 </div>
@@ -177,66 +177,32 @@
     <div class="pages d-non">
 
         <!-- nav bar  -->
-        <div class="nav-div d-non">
-            <button>
-                <i class="ri-menu-line bordr goto"></i>
-            </button>
-        </div>
-        <div id=" panel ">
-            <div class="panel-circle"></div>
-            <div class="panel-circle"></div>
-            <div class="panel-circle"></div>
-            <div class="panel-circle"></div>
-            <div class="panel-circle"></div>
-            <div class="panel-circle"></div>
-        </div>
+        <div class="nav-div ">
+            <div class="nav-logo ">
+                <button id="nav-logo-btn" class="bordr ">
+                    <i class="ri-menu-line  "></i>
+                </button>
+            </div>
+            <div class="panel d-non ">
+                <button class="panel-circle dfcc home-button "><i class="ri-home-line "></i> </button>
 
-        <div class="nav-links-div">
-
-            <div class="nav-circle d-non ">
-                <div class="stripe str1">
-                    <div class="frist">
-                        <div class="smcircle"></div>
-                    </div>
-                    <div class="sec"><button>Home</button></div>
-                </div>
-                <div class="stripe str2">
-                    <div class="frist">
-                        <div class="smcircle"></div>
-                    </div>
-                    <div class="sec"><button>About</button></div>
-                </div>
-                <div class="stripe str3">
-                    <div class="frist">
-                        <div class="smcircle"></div>
-                    </div>
-                    <div class="sec"><button>Portfolio</button></div>
-                </div>
-                <div class="stripe str4">
-                    <div class="frist">
-                        <div class="smcircle"></div>
-                    </div>
-                    <div class="sec"><button>Services</button></div>
-                </div>
-                <div class="stripe str5">
-                    <div class="frist">
-                        <div class="smcircle"></div>
-                    </div>
-                    <div class="sec"><button>Contact</button></div>
-                </div>
+                <div class="panel-circle dfcc about-button"><i class="ri-user-3-line"></i></div>
+                <div class="panel-circle dfcc portfolio-button"><i class="ri-gallery-line"></i></div>
+                <div class="panel-circle dfcc service-button"><i class="ri-code-s-slash-line"></i></div>
+                <div class="panel-circle dfcc contact-button"><i class="ri-mail-line"></i></div>
+                <div id="close-nav" class="panel-circle dfcc "><i class="ri-close-line"></i></div>
             </div>
         </div>
 
+
+
+
         <!-- go to home  -->
         <div class="goto-home">
-            <button id="goto-home">
+            <button class="home-button">
                 <i class="ri-logout-circle-line bordr goto"></i>
             </button>
         </div>
-
-        <!-- hero main div -->
-        <link rel="stylesheet" href="./hero.css">
-        <div class="hero-main d-non"></div>
 
         <!-- portfolio main div -->
         <link rel="stylesheet" href="./css/portfolio.css">
