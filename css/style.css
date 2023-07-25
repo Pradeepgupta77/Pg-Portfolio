@@ -1,0 +1,368 @@
+.main {
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #212121;
+}
+
+.main .sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1vw;
+    position: relative;
+}
+
+.sec1 .home {
+    height: 50vh;
+    width: 40vw;
+    position: relative;
+}
+
+.home .home-img {
+    height: 80%;
+    width: 45%;
+}
+
+.home-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 17px;
+    object-fit: cover;
+}
+
+.home .home-text {
+    height: 80%;
+    width: 45%;
+    position: relative;
+}
+
+.home-text h1 {
+    font-size: 3vw;
+}
+
+.home-text p {
+    font-size: 2vw;
+}
+
+@media (max-width:800px) {
+    .home-img {
+        display: none;
+    }
+
+    .home .home-text {
+        width: 90%;
+    }
+}
+
+/* <!-- section one part secoend --> */
+
+.sec1 .portfolio-div {
+    height: 50vh;
+    width: 50vw;
+    flex-direction: column;
+}
+
+/* raning text div */
+.portfolio-div .raning-text {
+    height: 13%;
+    width: 95%;
+    background: #a3a316;
+}
+
+/* main portfolio div */
+.portfolio-div .portfolio {
+    height: 80%;
+    width: 95%;
+    position: relative;
+}
+
+.portfolio>div {
+    height: 75%;
+    width: 100%;
+}
+
+.portfolio>div .portfolio-card {
+    height: 90%;
+    width: 30%;
+    background-color: #323232;
+    border: 1px solid #E8E8E8;
+}
+
+.portfolio-card>button {
+    outline: none;
+    border: none;
+    background: transparent;
+    flex-direction: column;
+}
+
+.portfolio-card>button>i {
+    margin: 1vw;
+    font-size: 5vw;
+}
+
+.portfolio-card>button>p {
+    margin: 1vw;
+    font-size: 1.2vw;
+}
+
+.portfolio>p {
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+@media (max-width:600px) {
+    .sec1 {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .sec1 .home {
+        height: 40vh;
+        width: 90vw;
+    }
+
+    .home .home-img {
+        height: 80%;
+        width: 45%;
+        display: block;
+    }
+
+    .home .home-text {
+        height: 80%;
+        width: 45%;
+    }
+
+    .sec1 .portfolio-div {
+        width: 90vw;
+    }
+}
+
+
+/* section two  */
+.main .sec2 {
+    margin: 1vw;
+    position: relative;
+
+}
+
+.sec2>div {
+    flex-direction: column;
+    position: relative;
+
+}
+
+.sec2 .about {
+    height: 40vh;
+    width: 25vw;
+}
+
+.about>div {
+    height: 70%;
+    width: 90%;
+}
+
+.about>div>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about>p {
+    align-self: flex-start;
+    margin-left: 1vw;
+}
+
+.about>h3 {
+    align-self: flex-start;
+    margin-left: 1vw;
+}
+
+/* section two part two */
+.sec2 .social {
+    height: 40vh;
+    width: 35vw;
+}
+
+.social .social-icons {
+    height: 60%;
+    width: 90%;
+    gap: 2%;
+}
+
+
+.social-icons .social-icons-card {
+    height: 90%;
+    width: 30%;
+    background-color: #323232;
+    border: 1px solid #E8E8E8;
+}
+
+.social-icons-card>a {
+    flex-direction: column;
+}
+
+.social-icons-card>a>i {
+    margin: 1vw;
+    font-size: 5vw;
+}
+
+
+
+.social>p {
+    align-self: flex-start;
+    margin-left: 1vw;
+}
+
+.social>h3 {
+    align-self: flex-start;
+    margin-left: 1vw;
+}
+
+/* section two part three */
+.sec2 .cv {
+    height: 40vh;
+    width: 25vw;
+    cursor: pointer;
+}
+
+.cv .cv-img {
+    height: 70%;
+    width: 90%;
+}
+
+.cv-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cv>p {
+    align-self: flex-start;
+    margin-left: 1vw;
+}
+
+.cv>h3 {
+    align-self: flex-start;
+    margin-left: 1vw;
+}
+
+@media (max-width:800px) {}
+
+@media (max-width:600px) {
+    .main .sec2 {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .sec2 .about {
+        width: 90vw;
+    }
+
+    .sec2 .social {
+        width: 90vw;
+    }
+
+    .sec2 .cv {
+        width: 90vw;
+    }
+
+    .sec2>div>p {
+        align-self: center;
+    }
+
+    .sec2>div>h3 {
+        align-self: center;
+    }
+}
+
+/* section three  */
+.main .sec3 {
+    margin: 1vw;
+
+}
+
+.sec3 .services {
+    height: 50vh;
+    width: 45vw;
+    flex-direction: column;
+    position: relative;
+}
+
+.services .service {
+    height: 70%;
+    width: 90%;
+}
+
+.service-card {
+    width: 40%;
+    height: 90%;
+    flex-direction: column;
+    background-color: #323232;
+    border: 1px solid #E8E8E8;
+}
+
+.services>p {
+    align-self: flex-start;
+    margin-left: 1vw;
+}
+
+.services>h3 {
+    align-self: flex-start;
+    margin-left: 1vw;
+}
+
+/* section three part two */
+.sec3 .contact-container {
+    height: 50vh;
+    width: 45vw;
+    position: relative;
+}
+
+.contact {
+    height: 60%;
+    width: 90%;
+    flex-direction: column;
+    background: #E8E8E8;
+    box-shadow: 0 0 5px rgb(159, 188, 235);
+}
+
+.contact h3 {
+    font-size: 2vw;
+}
+
+.contact p {
+    width: 80%;
+}
+
+.contact button {
+    margin: 0.5vw;
+    height: 15%;
+    width: 20%;
+}
+
+@media (max-width:800px) {
+    .service-card {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+
+    .wordpress-card {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .sec3 {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .sec3 .services {
+        width: 90vw;
+    }
+
+    .sec3 .contact-container {
+        width: 90vw;
+    }
+}

@@ -5,406 +5,420 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pradeep</title>
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <!-- css -->
-    <!-- navbar -->
-    <link rel="stylesheet" href="./utilityCSSFils/navbar.css">
-    <!-- utility -->
-    <link rel="stylesheet" href="./utilityCSSFils/utility.css">
-    <!-- home css -->
-    <link rel="stylesheet" href="./utilityCSSFils/home.css">
-    <!-- icon CDN  -->
+
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
-    <main id="main">
-        <!-- navbar -->
-        <div class="navbar bg-dark ">
-            <header class="header active">
-                <img class="logo" href="./index.html" src="./img/logo.png" />
-                <nav class="nav">
-                    <ul class="nav_list">
-                        <li><a class="nav_link" href="./index.html">Home</a></li>
-                        <li class="dropdown"><a class="nav_link dropbtn"
-                                href="./pages/Service/service.html">Services</a>
-                            <div class="dropdown-content">
-                                <a href="./pages/Service/service.html">Services</a>
-                                <a href="./pages/serviceDetails/Servicedetail.html">Services Details</a>
-                                <a href="./pages/Skills/skills.html">Skills</a>
-                            </div>
-                        </li>
-                        <li class="dropdown"><a class="nav_link dropbtn"
-                                href="./pages/portfolio/portfolio.html">Portfolio</a>
-                            <div class="dropdown-content">
-                                <a href="./pages/portfolio/portfolio.html">React Js</a>
-                                <a href="./pages/portfolio/portfolio.html">Web</a>
-                                <a href="./pages/portfolio/portfolio.html">Animetion</a>
-                                <a href="./pages/portfolio/portfolio.html">Game</a>
-                                <a href="./pages/portfolio/portfolio.html">WordPress</a>
-                            </div>
-                        </li>
+    <!-- nav main div  -->
+    <div class="main ">
 
-                        <li><a class="nav_link" href="./pages/About/about.html">About</a></li>
-                        <li><a class="nav_link" href="./pages/Contact/contact.html">Contact</a></li>
+        <!-- section one -->
+        <div class="sec1 ">
 
-                    </ul>
-                </nav>
-                <div class="mobile_icon_btn">
-                    <i name="menu" class="ri-menu-line mobile_nav_icon"></i>
-                    <i name="close" class="ri-close-circle-line mobile_nav_icon"></i>
+            <!-- section one  hero section -->
+            <div class="home  bordr dfcs">
+                <div class="home-img bordr">
+                    <img src="./img/my-pic.jpeg">
                 </div>
-            </header>
+                <div class="home-text bordr">
+
+                    <h1>Pradeep <br> Gupta</h1>
+                    <p>Front end web devloper</p>
+                    <button class="goto-hero">
+                        <i class="ri-logout-circle-r-line bordr goto"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- section one portfolio section -->
+            <div class="portfolio-div bordr dfcs">
+
+                <!-- raning text div  -->
+                <div class="raning-text dfcc bordr">hay i am pradeep</div>
+
+                <!-- main portfolio div  -->
+                <div class="portfolio  bordr">
+                    <div class="dfcs">
+
+                        <div class="portfolio-card  web-portfolio bordr">
+                            <button id="webButton" class=" dfcc text-color-dard ">
+                                <i class="ri-code-box-line"></i>
+                                <p>A beutifull animetion and responsive web page </p>
+                            </button>
+                        </div>
+                        <div class=" portfolio-card react-portfolio bordr">
+                            <button id="animetionButton" class=" dfcc text-color-dard">
+                                <i class="ri-reactjs-line"></i>
+                                <p>react project</p>
+                            </button>
+                        </div>
+                        <div class=" portfolio-card wordpress-portfolio bordr">
+                            <button id="wordpressButton" class=" dfcc text-color-dard">
+                                <i class="ri-wordpress-fill"></i>
+                                <p>wordpress project</p>
+                            </button>
+                        </div>
+
+                    </div>
+                    <p>Portfolio</p>
+                    <button class="goto-portfolio">
+                        <i class="ri-logout-circle-r-line bordr goto"></i>
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <!-- hero section     -->
-        <section id="page" class="bg-dark">
-            <!-- page parent dev/hero page  -->
-            <div class="hero page flex">
-                <!-- hero page text dev  -->
-                <div class="hero-text">
-                    <h2>Hello! I’m</h2>
-                    <h1>Pradeep Gupta</h1>
-                    <ul>
-                        <li>Front end Devlpoer </li>
-                        <li>Wordpress Devlpoer </li>
-                    </ul>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/pg-pradeepgupta" target="_blank">
+        <!-- section two -->
+        <div class="sec2 dfcs">
+
+            <!-- section two About -->
+            <div class="about dfcc bordr">
+                <div class="bordr">
+                    <img src="./img/logo.png">
+                </div>
+                <p>More About me</p>
+                <h3>Creadentials</h3>
+                <button id="goto-about">
+                    <i class="ri-logout-circle-r-line bordr goto"></i>
+                </button>
+            </div>
+
+            <!-- section two Social links -->
+            <div class="social dfcc bordr">
+                <div class="social-icons dfcc ">
+                    <div class="social-icons-card dfcc bordr">
+                        <a href="https://www.linkedin.com/in/pg-pradeepgupta" target="_blank"
+                            class="text-color-dard dfcc">
                             <i class="ri-linkedin-fill"></i>
+                            <p>linkedin</p>
                         </a>
-                        <a href="https://github.com/Pradeepgupta77" target="_blank">
-                            <i class="ri-github-fill"></i>
+                    </div>
+                    <div class="social-icons-card dfcc bordr">
+                        <a href="https://github.com/Pradeepgupta77" target="_blank" class="text-color-dard dfcc">
+                            <i class="ri-github-line"></i>
+                            <p>github</p>
                         </a>
-                        <a href="https://instagram.com/pg.pradeepgupta?igshid=ZDc4ODBmNjlmNQ==" target="_blank">
+                    </div>
+                    <div class="social-icons-card dfcc bordr">
+                        <a href="https://instagram.com/pg.pradeepgupta?igshid=ZDc4ODBmNjlmNQ==" target="_blank"
+                            class="text-color-dard dfcc">
                             <i class="ri-instagram-line"></i>
-                        </a>
-                    </div>
-                    <div class="hero-btn">
-                        <button class="btn-primery">
-                            <a href="./pages/Contact/contact.html">Contact Me </a>
-                            <i class="ri-telegram-line"></i>
-                        </button>
-                        <button class="btn-primery">
-                            <a href="./pages/portfolio/portfolio.html">Portfolio</a>
-                            <i class="ri-arrow-right-up-line"></i>
-                        </button>
-                    </div>
-
-                </div>
-
-                <!-- hero page text dev  -->
-                <div class="hero-img">
-                    <img src="./img/home-right.webp" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!-- servises section  -->
-        <!-- css  -->
-        <link rel="stylesheet" href="./pages/Service/servises.css">
-        <section id="page">
-            <div class="services page">
-                <h4>|| My Services</h4>
-                <h3>Service Provide By Me.</h3>
-
-                <!-- sider  -->
-                <div class="slider-card">
-                    <div class="slider flex">
-                        <div class="card skill-card1">
-                            <div class="box">
-                                <span class="title">Front End web devloper.</span>
-                                <div class="box-title-detail">
-                                    <ul>
-                                        <li><i class="ri-arrow-right-double-line"></i> React</li>
-                                        <li><i class="ri-arrow-right-double-line"></i> Animetion</li>
-                                        <li><i class="ri-arrow-right-double-line"></i> css</li>
-                                        <li><i class="ri-arrow-right-double-line"></i> HTML</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="card skill-card2">
-                            <div class="box">
-                                <span class="title">UI/UX Designer</span>
-                                <div class="box-title-detail">
-                                    <ul>
-                                        <li><i class="ri-arrow-right-double-line"></i> Landing page</li>
-                                        <li><i class="ri-arrow-right-double-line"></i> Icon Set</li>
-                                        <li><i class="ri-arrow-right-double-line"></i> Motion Graphic</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="card skill-card3">
-                            <div class="box">
-                                <span class="title">WordPress devloper</span>
-                                <div class="box-title-detail">
-                                    <ul>
-                                        <li><i class="ri-arrow-right-double-line"></i> React</li>
-                                        <li><i class="ri-arrow-right-double-line"></i> Animetion</li>
-                                        <li><i class="ri-arrow-right-double-line"></i> css</li>
-                                        <li><i class="ri-arrow-right-double-line"></i> HTML</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="card skill-card4">
-                            <div class="box">
-                            </div>
-                        </div> -->
-
-                    </div>
-                </div>
-
-
-            </div>
-
-
-
-        </section>
-
-        <!-- Special Skills section  -->
-        <!-- css  -->
-        <link rel="stylesheet" href="./pages/Skills/Skills.css">
-        <section id="page" class="bg-dark">
-            <div class="Special-Skills page flex">
-                <div class="spacial-skills-sec1">
-                    <h4>|| Special Skills</h4>
-                    <h3>My Special Skill Field.</h3>
-                    <div class="skill-btn">
-                        <button class="btn-primery">
-                            <a href="./pages/Contact/contact.html">Contact Me </a>
-                            <i class="ri-telegram-line"></i>
-                        </button>
-                        <button class="btn-primery" onclick="downloadResume()">
-                            <a href="#">Get Resume</a>
-                            <i class="ri-download-2-line"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="spacial-skills-sec2">
-                    <!-- react -->
-                    <div class="skills-div">
-                        <div class="skill-name-div">
-                            <div class="skill-name">React</div>
-                            <div class="skill-per">50%</div>
-                        </div>
-                        <div class="progress-bar-div">
-                            <div class="progress-bar">
-                                <div class="react"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- JavaScript -->
-                    <div class="skills-div">
-                        <div class="skill-name-div">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-per">50%</div>
-                        </div>
-                        <div class="progress-bar-div">
-                            <div class="progress-bar">
-                                <div class="JavaScript"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- css -->
-                    <div class="skills-div">
-                        <div class="skill-name-div">
-                            <div class="skill-name">css</div>
-                            <div class="skill-per">70%</div>
-                        </div>
-                        <div class="progress-bar-div">
-                            <div class="progress-bar">
-                                <div class="css"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- HTML -->
-                    <div class="skills-div">
-                        <div class="skill-name-div">
-                            <div class="skill-name">HTML</div>
-                            <div class="skill-per">80%</div>
-                        </div>
-                        <div class="progress-bar-div">
-                            <div class="progress-bar">
-                                <div class="HTML"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- WordPress -->
-                    <div class="skills-div">
-                        <div class="skill-name-div">
-                            <div class="skill-name">WordPress</div>
-                            <div class="skill-per">70%</div>
-                        </div>
-                        <div class="progress-bar-div">
-                            <div class="progress-bar">
-                                <div class="WordPress"></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </section>
-
-        <!-- portfilio section  -->
-        <!-- css  -->
-        <link rel="stylesheet" href="./pages/portfolio/portfolio.css">
-        <section id="page">
-            <div class="portfolio page">
-                <h4>|| Awesome Portfolio</h4>
-                <h3>My Complete Projects</h3>
-
-                <div class="project-btn">
-                    <button class="btn-primery">
-                        <a href="./pages/portfolio/portfolio.html">React Js</a>
-                        <i class="ri-reactjs-line"></i>
-                    </button>
-                    <button class="btn-primery">
-                        <a href="./pages/portfolio/portfolio.html">Web</a>
-                        <i class="ri-css3-line"></i>
-                    </button>
-                    <button class="btn-primery">
-                        <a href="./pages/portfolio/portfolio.html">Animetion</a>
-                        <i class="ri-quill-pen-line"></i>
-                    </button>
-                    <button class="btn-primery">
-                        <a href="./pages/portfolio/portfolio.html">Game</a>
-                        <i class="ri-gamepad-line"></i>
-                    </button>
-                    <button class="btn-primery">
-                        <a href="./pages/portfolio/portfolio.html">WordPress</a>
-                        <i class="ri-wordpress-line"></i>
-                    </button>
-                </div>
-
-
-                <div class="project flex">
-                    <div class="porject-card  flex">
-                        <div class="project1 ">
-
-                            <div>
-                                <a href="">
-                                    <img src="./img/porjectIMG/playable piano.png" alt="">
-                                </a>
-                            </div>
-                            <a href="">
-                                <p>playable piano</p>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="porject-card dis flex">
-                        <div class="project2 ">
-                            <div>
-                                <a href="">
-                                    <img src="./img/porjectIMG/playable piano.png" alt="">
-                                </a>
-                            </div>
-                            <a href="">
-                                <p>Lorem ipsum dolor sit.</p>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="btn-primery" id="react-btn-seeall">
-                        <a href="./pages/portfolio/portfolio.html">See all</a>
-                    </button>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- About section  -->
-        <!-- css  -->
-        <link rel="stylesheet" href="./pages/About/about.css">
-        <section id="page" class="bg-dark">
-            <div class="about ">
-                <div class="about-sec1 flex">
-                    <div class="my-pic flex bg-ligh">
-                        <img src="./img/my-pic.jpeg" alt="">
-                    </div>
-                    <div class="social about-social">
-                        <a href="https://www.linkedin.com/in/pg-pradeepgupta" target="_blank">
-                            <i class="ri-linkedin-fill"></i>
-                        </a>
-                        <a href="https://github.com/Pradeepgupta77" target="_blank">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                        <a href="https://instagram.com/pg.pradeepgupta?igshid=ZDc4ODBmNjlmNQ==" target="_blank">
-                            <i class="ri-instagram-line"></i>
+                            <p>instagram</p>
                         </a>
                     </div>
 
                 </div>
-                <div class="about-sec2 ">
+                <p>Stay with me </p>
+                <h3>Profiles</h3>
+            </div>
 
-                    <h4><a href="./pages/About/about.html">||About Me</a></h4>
+            <!-- section two Download cv -->
+            <div id="downloadLink" class="cv dfcc bordr">
+                <div class="cv-img ">
+                    <img src="./img/cv.jpg" class="bordr">
+                </div>
+                <p>My CV</p>
+                <h3>Downlode</h3>
+            </div>
+        </div>
 
-                    <div class="about-me ">
+        <!-- section three -->
+        <div class="sec3 dfcs">
 
+            <!-- section three  services -->
+            <div class="services  dfcc bordr ">
+                <div class="service dfcs">
+                    <div class="service-card dfcc  bordr">
+                        Front End Web devloper
+                        <p><i class="ri-arrow-right-double-line"></i></p>
+                        <p><i class="ri-arrow-right-double-line"></i></p>
+                        <p><i class="ri-arrow-right-double-line"></i></p>
+                        <p><i class="ri-arrow-right-double-line"></i></p>
 
-                        <p>
-                            <span>"</span>Expert in web design: visually appealing, user-friendly websites. HTML, CSS,
-                            JavaScript.
-                            Clean, intuitive interfaces reflecting latest trends. Let's collaborate on your
-                            vision!<span>"</span>
-
-                        </p>
-
-                        <button class="btn-primery abou-btn">
-                            <a href="./pages/About/about.html">More</a>
-                        </button>
+                    </div>
+                    <div class="service-card dfcc bordr">
+                        wordpress devloper
+                        <p><i class="ri-arrow-right-double-line"></i></p>
+                        <p><i class="ri-arrow-right-double-line"></i></p>
+                        <p><i class="ri-arrow-right-double-line"></i></p>
+                        <p><i class="ri-arrow-right-double-line"></i></p>
                     </div>
 
                 </div>
+                <p>Specialization</p>
+                <h3>Services</h3>
+                <button id="goto-services">
+                    <i class="ri-logout-circle-r-line bordr goto"></i>
+                </button>
             </div>
-        </section>
 
-        <!-- Contact section  -->
-        <!-- css  -->
-        <link rel="stylesheet" href="./pages/Contact/contact.css">
-        <section id="contact-me">
-            <div class="contact-me flex ">
-                <div class="contact-div">
-                    <h5>Contact Me</h5>
+            <!-- section three  contact -->
+            <div class="contact-container dfcc bordr">
+                <div class="contact dfcc bordr">
+                    <h3>Contact Me</h3>
                     <p>If you have any queries please feel free to contact me. You can contact me through the following
                         form.
-
                     </p>
-                    <p>Thank you</p>
-                    <div class="hero-btn">
-                        <button class="btn-primery">
-                            <a href="./pages/Contact/contact.html">Contact Me </a>
-                            <i class="ri-telegram-line"></i>
-                        </button>
-                    </div>
+                    <span>Thank you</span>
+                    <button id="goto-Contact"> Contact Me</button>
                 </div>
-        </section>
-
-        <script src="./main.js"></script>
-    </main>
-
-    <!-- footer  -->
-    <!-- css  -->
-    <link rel="stylesheet" href="./utilityCSSFils/footer.css">
-    <section id="Footer">
-        <div class="footer ">
-            <div>©2023 Pradeep Kumar Gupta</div>
-            <div>
-                <a href="./pages/About/about.html">
-                    <img src="./img/logo.png" alt="">
-                </a>
             </div>
         </div>
-    </section>
+    </div>
+
+
+    <!-- pages  -->
+
+    <div class="pages d-non">
+
+        <!-- nav bar  -->
+        <div class="nav-div d-non">
+            <button>
+                <i class="ri-menu-line bordr goto"></i>
+            </button>
+        </div>
+        <div id=" panel ">
+            <div class="panel-circle"></div>
+            <div class="panel-circle"></div>
+            <div class="panel-circle"></div>
+            <div class="panel-circle"></div>
+            <div class="panel-circle"></div>
+            <div class="panel-circle"></div>
+        </div>
+
+        <div class="nav-links-div">
+
+            <div class="nav-circle d-non ">
+                <div class="stripe str1">
+                    <div class="frist">
+                        <div class="smcircle"></div>
+                    </div>
+                    <div class="sec"><button>Home</button></div>
+                </div>
+                <div class="stripe str2">
+                    <div class="frist">
+                        <div class="smcircle"></div>
+                    </div>
+                    <div class="sec"><button>About</button></div>
+                </div>
+                <div class="stripe str3">
+                    <div class="frist">
+                        <div class="smcircle"></div>
+                    </div>
+                    <div class="sec"><button>Portfolio</button></div>
+                </div>
+                <div class="stripe str4">
+                    <div class="frist">
+                        <div class="smcircle"></div>
+                    </div>
+                    <div class="sec"><button>Services</button></div>
+                </div>
+                <div class="stripe str5">
+                    <div class="frist">
+                        <div class="smcircle"></div>
+                    </div>
+                    <div class="sec"><button>Contact</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- go to home  -->
+        <div class="goto-home">
+            <button id="goto-home">
+                <i class="ri-logout-circle-line bordr goto"></i>
+            </button>
+        </div>
+
+        <!-- hero main div -->
+        <link rel="stylesheet" href="./hero.css">
+        <div class="hero-main d-non"></div>
+
+        <!-- portfolio main div -->
+        <link rel="stylesheet" href="./css/portfolio.css">
+        <div class="portfolio-main d-non">
+
+            <!-- portfolio project button -->
+            <div class="portolio-btn dfcc">
+                <button id="p-webButton">Web</button>
+                <button id="p-animetionButton">Animetion</button>
+                <button id="p-reactButton">React</button>
+                <button id="p-wordpressButton">Wordpress</button>
+            </div>
+            <!-- portfolio responsive project  -->
+            <div class="web-div d-non">
+                <div class="project dfcs ">
+                    <div class="img-div dfcc">
+                        <div class="project-img dfcc bordr">
+                            <a href="#" class="dfcc">
+                                <img class="bordr" src="./img/porjectIMG/playable piano.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-div dfcc">
+                        <h3>responsive</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto?</p>
+                        <a href="">Chek out</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- portfolio Animetion project  -->
+            <div class="animetion-div d-non">
+
+                <div class="project dfcs ">
+                    <div class="img-div dfcc">
+                        <div class="project-img dfcc bordr">
+                            <a href="#" class="dfcc">
+                                <img class="bordr" src="./img/porjectIMG/playable piano.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-div dfcc">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto?</p>
+                        <a href="">Chek out</a>
+                    </div>
+                </div>
+                <div class="project dfcs ">
+                    <div class="img-div dfcc">
+                        <div class="project-img dfcc bordr">
+                            <a href="#" class="dfcc">
+                                <img class="bordr" src="./img/porjectIMG/playable piano.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-div dfcc">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto?</p>
+                        <a href="">Chek out</a>
+                    </div>
+                </div>
+                <div class="project dfcs ">
+                    <div class="img-div dfcc">
+                        <div class="project-img dfcc bordr">
+                            <a href="#" class="dfcc">
+                                <img class="bordr" src="./img/porjectIMG/playable piano.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-div dfcc">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto?</p>
+                        <a href="">Chek out</a>
+                    </div>
+                </div>
+                <div class="project dfcs ">
+                    <div class="img-div dfcc">
+                        <div class="project-img dfcc bordr">
+                            <a href="#" class="dfcc">
+                                <img class="bordr" src="./img/porjectIMG/playable piano.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-div dfcc">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto?</p>
+                        <a href="">Chek out</a>
+                    </div>
+                </div>
+                <div class="project dfcs ">
+                    <div class="img-div dfcc">
+                        <div class="project-img dfcc bordr">
+                            <a href="#" class="dfcc">
+                                <img class="bordr" src="./img/porjectIMG/playable piano.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-div dfcc">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto?</p>
+                        <a href="">Chek out</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- portfolio react project  -->
+            <div class="react-div d-non">
+                <div class="project dfcs ">
+                    <div class="img-div dfcc">
+                        <div class="project-img dfcc bordr">
+                            <a href="#" class="dfcc">
+                                <img class="bordr" src="./img/porjectIMG/playable piano.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-div dfcc">
+                        <h3>react</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto?</p>
+                        <a href="">Chek out</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- portfolio wordpress project  -->
+            <div class="Wordpress-div d-non">
+                <div class="project dfcs ">
+                    <div class="img-div dfcc">
+                        <div class="project-img dfcc bordr">
+                            <a href="#" class="dfcc">
+                                <img class="bordr" src="./img/porjectIMG/playable piano.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-div dfcc">
+                        <h3>word</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto?</p>
+                        <a href="">Chek out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About main div -->
+        <link rel="stylesheet" href="./css/about.css">
+        <div class="about-main d-non">
+            <div class="subpage-div dfcc">
+                About me
+            </div>
+
+            <div class="aboutme dfcs">
+                <div class="aboutme-resume-sec">
+
+                </div>
+                <div class="aboutme-text-sec">
+                    <h3>I’m </h3>
+                    <h2>Pradeep Kumar Gupta</h2>
+                    <h3>Front End Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, ipsum?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service main div -->
+        <link rel="stylesheet" href="./css/services.css">
+        <div class="Service-main d-non">
+            service
+        </div>
+
+        <!-- contact main div -->
+        <link rel="stylesheet" href="./css/contact.css">
+        <div class="contact-main d-non">
+            contact
+        </div>
+    </div>
+
+
+    <!-- gsap cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom js file  -->
+    <script src="./main.js"></script>
 </body>
 
 </html>

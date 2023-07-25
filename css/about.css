@@ -1,0 +1,21 @@
+.about-main {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutme {
+    height: 80vh;
+    background: #1bba83;
+}
+
+.aboutme-resume-sec {
+    height: 70%;
+    width: 30%;
+    background: #000;
+}
+
+.aboutme-text-sec {
+    height: 100%;
+    width: 50%;
+    background: #af1515;
+}
