@@ -1,7 +1,7 @@
 .main {
     border: 2px solid black;
     border-radius: 10px;
-    background: #212121;
+    background: rgba(60, 60, 60, 0.647);
 }
 
 .main .sec1 {
@@ -38,6 +38,7 @@
 
 .home-text h1 {
     font-size: 3vw;
+    margin-top: 3vw;
 }
 
 .home-text p {
@@ -50,11 +51,23 @@
     }
 
     .home .home-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         width: 90%;
+    }
+
+    .home-text h1 {
+        font-size: 5vw;
+    }
+
+    .home-text p {
+        font-size: 3vw;
     }
 }
 
-/* <!-- section one part secoend --> */
+/* <!-- section one portfolio --> */
 
 .sec1 .portfolio-div {
     height: 50vh;
@@ -66,7 +79,8 @@
 .portfolio-div .raning-text {
     height: 13%;
     width: 95%;
-    background: #a3a316;
+
+    /* background: #a3a316; */
 }
 
 /* main portfolio div */
@@ -89,6 +103,8 @@
 }
 
 .portfolio-card>button {
+    height: 100%;
+    width: 100%;
     outline: none;
     border: none;
     background: transparent;
@@ -103,12 +119,10 @@
 .portfolio-card>button>p {
     margin: 1vw;
     font-size: 1.2vw;
+    width: 90%;
 }
 
-.portfolio>p {
-    font-size: 2vw;
-    margin-left: 1vw;
-}
+
 
 @media (max-width:600px) {
     .sec1 {
@@ -135,10 +149,19 @@
     .sec1 .portfolio-div {
         width: 90vw;
     }
+
+    .portfolio-card>button>i {
+        font-size: 6vh;
+    }
+
+    .portfolio-card>button>p {
+        font-size: 1.5vh;
+    }
 }
 
 
 /* section two  */
+
 .main .sec2 {
     margin: 1vw;
     position: relative;
@@ -151,6 +174,7 @@
 
 }
 
+/* About */
 .sec2 .about {
     height: 40vh;
     width: 25vw;
@@ -161,23 +185,14 @@
     width: 90%;
 }
 
-.about>div>img {
+.about div img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill
 }
 
-.about>p {
-    align-self: flex-start;
-    margin-left: 1vw;
-}
 
-.about>h3 {
-    align-self: flex-start;
-    margin-left: 1vw;
-}
-
-/* section two part two */
+/* section two  profiles  */
 .sec2 .social {
     height: 40vh;
     width: 35vw;
@@ -206,19 +221,17 @@
     font-size: 5vw;
 }
 
+@media (max-width:800px) {
+    .social-icons-card>a>i {
+        font-size: 5vh;
+    }
 
-
-.social>p {
-    align-self: flex-start;
-    margin-left: 1vw;
 }
 
-.social>h3 {
-    align-self: flex-start;
-    margin-left: 1vw;
-}
 
-/* section two part three */
+
+
+/* section two resume */
 .sec2 .cv {
     height: 40vh;
     width: 25vw;
@@ -233,20 +246,33 @@
 .cv-img img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
-.cv>p {
-    align-self: flex-start;
-    margin-left: 1vw;
+.cv h4:hover {
+    padding: 3px;
+    border: 1px solid white;
+    color: #000;
+    background-color: #8a8a8a;
 }
 
-.cv>h3 {
-    align-self: flex-start;
-    margin-left: 1vw;
-}
+@media (max-width:800px) {
+    #insta {
+        display: none;
+    }
 
-@media (max-width:800px) {}
+    .social-icons .social-icons-card {
+        width: 40%;
+    }
+
+    .cv h4 {
+        margin-top: 5px;
+        padding: 3px;
+        border: 1px solid white;
+        color: #000;
+        background-color: #8a8a8a;
+    }
+}
 
 @media (max-width:600px) {
     .main .sec2 {
@@ -262,17 +288,19 @@
         width: 90vw;
     }
 
+    #insta {
+        display: flex;
+    }
+
+    .social-icons .social-icons-card {
+        width: 30%;
+    }
+
     .sec2 .cv {
         width: 90vw;
     }
 
-    .sec2>div>p {
-        align-self: center;
-    }
 
-    .sec2>div>h3 {
-        align-self: center;
-    }
 }
 
 /* section three  */
@@ -299,17 +327,23 @@
     flex-direction: column;
     background-color: #323232;
     border: 1px solid #E8E8E8;
+    font-size: 1.2vw;
 }
 
-.services>p {
-    align-self: flex-start;
-    margin-left: 1vw;
+@media (max-width:800px) {
+    .service-card {
+        /* position: relative; */
+        width: 80%;
+        height: 90%;
+        font-size: 2vh;
+    }
+
+    #wordpress-card {
+        display: none;
+    }
 }
 
-.services>h3 {
-    align-self: flex-start;
-    margin-left: 1vw;
-}
+
 
 /* section three part two */
 .sec3 .contact-container {
@@ -322,33 +356,40 @@
     height: 60%;
     width: 90%;
     flex-direction: column;
-    background: #E8E8E8;
-    box-shadow: 0 0 5px rgb(159, 188, 235);
+    background: #323232;
+    box-shadow: 0 0 5px rgb(92, 92, 92);
 }
 
-.contact h3 {
+.contact h5 {
     font-size: 2vw;
 }
 
 .contact p {
     width: 80%;
+    text-align: center;
+
 }
 
 .contact button {
     margin: 0.5vw;
     height: 15%;
     width: 20%;
+    font-size: 1.2vw;
+    color: #524f4f;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #E8E8E8;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    color: #000;
+    background-color: #8a8a8a;
 }
 
 @media (max-width:800px) {
-    .service-card {
-        position: relative;
-        width: 200px;
-        height: 200px;
-    }
-
-    .wordpress-card {
-        display: none;
+    .contact {
+        text-align: center;
     }
 }
 

@@ -1,19 +1,34 @@
+.project-sec-detal {
+    text-align: center;
+    font-size: 2vw;
+
+}
+
 .portolio-btn {
-    height: 10vh;
+    /* height: 10vh; */
     gap: 2vw;
+    padding: 2vw;
+    flex-wrap: wrap;
 }
 
 .portolio-btn button {
-    height: 50%;
-    width: 10%;
+    height: 30px;
+    width: 85px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 2px white;
+    background: #FFF;
     overflow: hidden;
+}
 
+.portolio-btn button:hover {
+    background-color: #353333;
+    color: #FFF;
 }
 
 .project {
     height: 60vh;
     margin-top: 1vw;
-    /* background: #5bde24; */
 }
 
 .img-div {
@@ -42,6 +57,7 @@
 .text-div h3 {
     font-size: 3vw;
     margin-bottom: 1vw;
+
 }
 
 .text-div p {

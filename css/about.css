@@ -1,21 +1,178 @@
 .about-main {
     height: 100%;
-    width: 100%;
+
 }
 
 .aboutme {
     height: 80vh;
-    background: #1bba83;
+    /* background: #1bba83; */
 }
 
-.aboutme-resume-sec {
+.aboutme-img {
     height: 70%;
     width: 30%;
-    background: #000;
+    /* background: #000; */
+}
+
+.aboutme-img img {
+    height: 100%;
+
+    object-fit: fill;
+    border-radius: 15px;
 }
 
 .aboutme-text-sec {
     height: 100%;
     width: 50%;
-    background: #af1515;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.aboutme-text-sec h2 {
+    font-size: 3vw;
+}
+
+.aboutme-text-sec h3 {
+    font-size: 2vw;
+    margin: 1vw 0;
+}
+
+.aboutme-text-sec p {
+    font-size: 1.3vw;
+}
+
+/* about  button section  */
+
+.about-btn {
+    height: 10vh;
+
+    gap: 10vw;
+    /* background-color: aqua; */
+}
+
+.about-btn a {
+    height: 80%;
+    width: 30%;
+    border: 1px solid white;
+}
+
+.about-btn-bg {
+    background-color: #2A2C39;
+}
+
+.education {
+
+    margin: 10vh 2vw;
+}
+
+.corces {
+
+    margin: 10vh 2vw;
+}
+
+.education-date {
+    width: 25%;
+    border: 1.5px solid gray;
+}
+
+.college-date {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.college-date p {
+    padding: 0 10px 0 0;
+    border-right: 2px solid white;
+}
+
+
+.education-detail {
+    width: 70%;
+}
+
+.college-detail {
+    height: 45vh;
+    margin: 0 0 0 5%;
+    /* padding-left: 10px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+}
+
+.college-detail h5 {
+    font-size: 3vw;
+}
+
+.college-detail p {
+    font-size: 1.5vw;
+    margin-top: 1.5vh;
+}
+
+@media (max-width:600px) {
+    .aboutme {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -10vh;
+    }
+
+    .aboutme-img {
+        height: 45%;
+
+    }
+
+    .aboutme-img img {
+        height: 100%;
+        width: 60%;
+    }
+
+    .aboutme-text-sec {
+        height: 30%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 5vh;
+    }
+
+    .aboutme-text-sec h2 {
+        font-size: 3vh;
+    }
+
+    .aboutme-text-sec h3 {
+        font-size: 2vh;
+        margin: 1vh 0;
+    }
+
+    .aboutme-text-sec p {
+        font-size: 1.3vh;
+        width: 85%;
+    }
+
+    /* // */
+    .about-btn a {
+        height: 5vh;
+    }
+
+    .college-date {
+        height: 35vh;
+    }
+
+    .college-detail {
+        height: 35vh;
+    }
+
+    .college-detail h5 {
+        font-size: 3vh;
+    }
+
+    .college-detail p {
+        font-size: 1.5vh;
+        margin-top: 1.5vh;
+    }
+}
+

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
 
 * {
     margin: 0;
@@ -12,8 +11,8 @@
 html,
 body {
     height: 100%;
-    width: 100%;
-    background: #E3E3E3;
+
+    background: #8f8c8c;
     padding: 1vw 1vw;
 }
 
@@ -35,24 +34,68 @@ a {
     cursor: pointer;
 }
 
-.text-color-dard {
-    color: black;
+.text-white {
+    color: #fff;
+}
+
+.text-grey {
+    color: #8a8a8a;
 }
 
 .d-non {
     display: none;
+    transition: all 0.5s;
 }
 
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+
+}
+
+.main h4 {
+    align-self: flex-start;
+    margin-left: 1.5vw;
+    font-size: 2vw;
+    color: #fff;
+}
+
+.main h3 {
+    align-self: flex-start;
+    margin-left: 1.5vw;
+    font-size: 1vw;
+    color: #8a8a8a;
+}
+
+@media (max-width:600px) {
+    .main h3 {
+        align-self: center;
+        margin-top: 1vh;
+        font-size: 1.5vh;
+    }
+
+    .main h4 {
+        align-self: center;
+        font-size: 2vh;
+    }
+
+    #portfolio-h4 {
+        text-align: center;
+    }
+
+}
 
 .sec1>div,
 .sec2>div,
 .sec3>div {
-    background: #F0F2F0;
+    background: #232526;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);
+    background: -webkit-linear-gradient(to right, #414345, #232526);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #000C40, #F0F2F0);
+    background: linear-gradient(to right, #414345, #232526);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* all div animetion */
@@ -70,27 +113,43 @@ a {
     transform: scale(0.95) rotateZ(1.7deg);
 }
 
+@media (max-width:800px) {
+    .bordr:hover {
+        transform: scale(1);
+    }
+
+    .bordr:active {
+        transform: scale(1) rotateZ(0);
+    }
+}
+
 /* for go to button  */
 .goto {
     position: absolute;
     bottom: 1vw;
     right: 1vw;
     font-size: 3vw;
-    color: #000;
+    color: #bdb3b3;
     cursor: pointer;
     padding: 0.5vw;
 }
 
 .goto:hover {
-    background: #000;
-    color: #E3E3E3;
+    background: #bdb3b3;
+    color: #000000;
+}
+
+@media (max-width:800px) {
+    .goto {
+        font-size: 5vh;
+    }
+
 }
 
 
 .subpage-div {
     height: 10%;
     font-size: 2vw;
-    /* background: #a80b0b; */
 }
 
 /* on click pages  */
@@ -99,8 +158,14 @@ a {
     overflow: auto;
     border: 2px solid black;
     border-radius: 10px;
-    background: #212121;
     position: relative;
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .goto-home {
@@ -109,6 +174,7 @@ a {
     right: 5%;
 }
 
+/* nsv bar  */
 .nav-div {
     position: absolute;
     top: 5%;
@@ -124,25 +190,102 @@ a {
 
 .nav-logo>button {
     height: 100%;
-    width: 100%;
+
 }
 
 .nav-logo>button>i {
-    font-size: 2vw;
+    font-size: 3vw;
+}
+
+@media (max-width:700px) {
+    .nav-logo>button>i {
+        font-size: 3vh;
+    }
 }
 
 .panel {
-    margin-top: 2vw;
+    position: absolute;
+    top: -10vh;
+    left: -10vw;
+    height: 100vh;
+    width: 40vw;
+    z-index: 999;
+    background-color: #414345;
+    padding: 10vh 0 0 10vw;
+    /* flex-direction: column; */
+
+}
+
+#close-nav {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    align-self: flex-end;
+    border: none;
+    background-color: #fff;
+}
+
+#close-nav i {
+    font-size: 3vw;
+
+
 }
 
 .panel-circle {
-    height: 4vw;
-    width: 4vw;
-    margin: 0.8vw;
-    border-radius: 50%;
-    background: #d6d5d5;
+    font-size: 4vw;
+    height: 50px;
+    width: 80%;
+    margin: 2vw 0;
+    text-align: center;
 }
 
-.panel-circle i {
-    font-size: 2vw;
+.panel-circle:hover {
+    border-bottom: 1.5px solid black;
+}
+
+/* page title section */
+
+.page-title {
+    height: 10vh;
+
+    /* background-color: #000000; */
+}
+
+.page-title p {
+    margin: 5vh;
+    font-size: 5vw;
+
+
+}
+
+/* pages contact  */
+.page-end-contacts {
+    height: 40vh;
+}
+
+/*   footer section  */
+.footer {
+    height: 12vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.footer .img {
+    width: 10%;
+}
+
+.footer p {
+    width: 70%;
+    text-align: center;
+}
+
+.footer .goto-top button>a {
+    cursor: pointer;
+
+}
+
+.pages-to-Contact {
+    cursor: pointer;
 }

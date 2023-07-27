@@ -29,6 +29,7 @@ const portfolioMainDiv = document.querySelector(".portfolio-main");
 const webdiv = document.querySelector(".web-div");
 const animetiondiv = document.querySelector(".animetion-div");
 const reactDiv = document.querySelector(".react-div");
+const gameDiv = document.querySelector(".game-div");
 const wordpressDiv = document.querySelector(".Wordpress-div");
 // about 
 const aboutMainDiv = document.querySelector(".about-main");
@@ -98,6 +99,7 @@ const wordpressButton = document.getElementById("wordpressButton");
 const pWebButton = document.getElementById("p-webButton");
 const pAnimetionButton = document.getElementById("p-animetionButton");
 const pReactButton = document.getElementById("p-reactButton");
+const pGameButton = document.getElementById("p-gameButton");
 const pWordpressButton = document.getElementById("p-wordpressButton");
 
 
@@ -135,28 +137,44 @@ gotoPortfolio.addEventListener("click", function () {
 
 //  portfolio page js 
 pWebButton.addEventListener("click", function () {
+    // pWebButton.style.backgroundColor = "#8a8a8a";
     webdiv.classList.remove("d-non")
     animetiondiv.classList.add("d-non");
     reactDiv.classList.add("d-non");
+    gameDiv.classList.add("d-non");
     wordpressDiv.classList.add("d-non");
 })
 pAnimetionButton.addEventListener("click", function () {
+    // pAnimetionButton.style.backgroundColor = "#8a8a8a";
     animetiondiv.classList.remove("d-non")
     webdiv.classList.add("d-non");
     reactDiv.classList.add("d-non");
+    gameDiv.classList.add("d-non");
     wordpressDiv.classList.add("d-non");
 })
 pReactButton.addEventListener("click", function () {
+    // pReactButton.style.backgroundColor = "#8a8a8a";
     reactDiv.classList.remove("d-non")
+    webdiv.classList.add("d-non");
+    animetiondiv.classList.add("d-non");
+    wordpressDiv.classList.add("d-non");
+    gameDiv.classList.add("d-non");
+})
+pGameButton.addEventListener("click", function () {
+    // pGameButton.style.backgroundColor = "#8a8a8a";
+    gameDiv.classList.remove("d-non")
+    reactDiv.classList.add("d-non")
     webdiv.classList.add("d-non");
     animetiondiv.classList.add("d-non");
     wordpressDiv.classList.add("d-non");
 })
 pWordpressButton.addEventListener("click", function () {
+    // pWordpressButton.style.backgroundColor = "#8a8a8a";
     wordpressDiv.classList.remove("d-non")
     webdiv.classList.add("d-non");
     animetiondiv.classList.add("d-non");
     reactDiv.classList.add("d-non");
+    gameDiv.classList.add("d-non");
 })
 
 // About section js 
@@ -168,6 +186,27 @@ gotoAbout.addEventListener("click", function () {
     aboutMainDiv.classList.remove("d-non");
 })
 
+const corcesLink = document.getElementById("about-Corces");
+const educationLink = document.getElementById("about-education");
+const corcesDiv = document.querySelector(".corces");
+const educationDiv = document.querySelector(".education");
+
+corcesLink.addEventListener("click", function () {
+    corcesLink.classList.add("about-btn-bg")
+    educationLink.classList.remove("about-btn-bg")
+    corcesDiv.classList.remove("d-non");
+    educationDiv.classList.add("d-non");
+});
+
+educationLink.addEventListener("click", function () {
+    corcesLink.classList.remove("about-btn-bg")
+    educationLink.classList.add("about-btn-bg")
+    corcesDiv.classList.add("d-non");
+    educationDiv.classList.remove("d-non");
+});
+
+
+
 // services section js 
 const gotoServices = document.getElementById("goto-services")
 gotoServices.addEventListener("click", function () {
@@ -175,6 +214,25 @@ gotoServices.addEventListener("click", function () {
     pageDiv.classList.remove("d-non");
     servicesMainDiv.classList.remove("d-non");
 })
+
+const serviceSkillsButton = document.getElementById("service-skills");
+const serviceDetailButton = document.getElementById("service-detail");
+const serviceSkillsDiv = document.querySelector(".services-and-skills")
+const serviceDetailDiv = document.querySelector(".service-detail-div")
+
+serviceSkillsButton.addEventListener("click", function () {
+    serviceSkillsButton.classList.add("about-btn-bg")
+    serviceDetailButton.classList.remove("about-btn-bg")
+    serviceSkillsDiv.classList.remove("d-non");
+    serviceDetailDiv.classList.add("d-non");
+})
+serviceDetailButton.addEventListener("click", function () {
+    serviceDetailButton.classList.add("about-btn-bg")
+    serviceSkillsButton.classList.remove("about-btn-bg")
+    serviceDetailDiv.classList.remove("d-non");
+    serviceSkillsDiv.classList.add("d-non");
+})
+
 
 // Contact section js 
 
@@ -213,3 +271,33 @@ function closePgeDiv() {
     servicesMainDiv.classList.add("d-non");
     contactMainDiv.classList.add("d-non");
 }
+
+// dom editing 
+// writing text 
+let title = document.querySelector('.raning-text');
+let name = "See betutifull and responsive projects "
+let index = 1;
+
+const typeWriter = () => {
+    let new_title = name.slice(0, index);
+    title.innerText = new_title;
+
+    index > name.length ? index = 1 : index++;
+    // index++;
+
+    setTimeout(() => typeWriter(), 100)
+}
+
+typeWriter();
+
+// pages to contact page 
+const pageContactToContactPage = document.querySelectorAll(".pages-to-Contact");
+pageContactToContactPage.forEach(button => {
+    button.addEventListener("click", function () {
+        closePgeDiv();
+        pageDiv.classList.remove("d-non");
+        contactMainDiv.classList.remove("d-non");
+    });
+});
+
+
